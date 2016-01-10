@@ -3,12 +3,12 @@ declare(strict_types = 1);
 
 interface IComponent
 {
-    public function Add(IComponent $component);
-    public function Remove(IComponent $component) : IComponent;
-    public function Display(int $depth) : string;
-    public function Find(IComponent $component);
-    public function GetName() : string;
-    public function SetName(string $value);
+    function Add(IComponent $component);
+    function Remove(IComponent $component) : IComponent;
+    function Display(int $depth) : string;
+    function Find(IComponent $component);
+    function GetName() : string;
+    function SetName(string $value);
 }
 
 class Single implements IComponent

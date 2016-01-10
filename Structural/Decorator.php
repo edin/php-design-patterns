@@ -14,7 +14,7 @@ class Component implements IComponent
     }
 }
 
-class DecoratorA extends Component 
+class DecoratorA implements IComponent 
 {
     private $component;
     
@@ -29,7 +29,7 @@ class DecoratorA extends Component
     }
 }
 
-class DecoratorB extends Component 
+class DecoratorB implements IComponent 
 {
     private $component;
     public  $addedState = "";
